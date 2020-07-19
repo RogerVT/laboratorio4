@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8"/>
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css"> 
+    <link rel = "stylesheet" href="style.css"> 
+  	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src= "script.js"></script>
+ 
+    <title>
+      Lista de compras
+    </title>
+
+   
+  </head>
+  <body class = "uk-background-muted">
+  	<header class = "uk-flex uk-flex-center">
+  		<h1 class = "uk-heading-small" style = "color: #444444">Mi lista de compras</h1>
+  	</header>
+
+    <div class="container">
+    <div class = "uk-flex uk-flex-center uk-background-muted">
+      <form id = "item">
+          <span class = "uk-label uk-label-default">Ingresa</span>
+          <input class = "uk-input uk-form-width-medium" type="text" placeholder="e.g., broccoli" id = "entry"></input>
+          <button class="uk-button uk-button-primary" type="submit">
+            Add item
+          </button>
+      </form>
+  	</div>
+
+  	<div class = "uk-child-width-expand@s" uk-grid>
+
+      <div>
+        <h4>Pendiente</h4>
+        <ul id = "todo-list" class = "uk-list uk-list-large uk-list-divider">
+        </ul>
+      </div>
+
+      <div>
+        <h4>Listo</h4>
+        <ul id = "complete-list" class = "uk-list uk-list-large uk-list-divider">
+        </ul>
+      </div>
+
+  	</div>
+  </div>
+  </body>
+</html>
